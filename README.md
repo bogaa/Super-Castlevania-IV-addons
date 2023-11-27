@@ -1,7 +1,7 @@
 # Castlevania-4-ASM-IPS-Patches
 
 How to use:
-- Applay IPS patches to the ROM mention bellow. Most of them require to be patch with A_baseExpansion.ips first. 
+- Applay IPS patches to the ROM mention bellow. Most of them require to be patch with A_baseExpansion.ips first! 
 - Stacking IPS might not always work then you need to use ASM to make it work. 
 - For asm patching you like to select your options in the main.asm and then patch with make.bat.
 

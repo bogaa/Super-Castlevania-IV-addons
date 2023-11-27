@@ -4,17 +4,19 @@
 
 !deathCounter = 0
 !removeTimer = 0
+!levelSelect = 0
 
-!removeGFXreuse = 0
 !hotFixWhipCancle = 0				; always check ring with whip 
-!NoFatalCrusherHit = 0
+!NoFatalCrusherHit = 0				; set to do 5 damage in the code 
+!NoFatalSpikeHit = 0
+
 !BatRing = 0						; code in baseRomTweaks
 
 !removeGFXreuse = 0
 !HeartDependendMultishot = 0
 !lastSlotFixedRing = 0
 !practice = 0
-!levelSelect = 0
+
 !freeScrolling = 0					; broken 
 !reUseBrkblBlock = 0
 !simonIdleAnimation = 0
@@ -29,12 +31,14 @@
 !eventHandlerChanges = 0
 
 !movableGoldPlatform = 0 
-!NoFatalSpikeHit = 0
 
+!debuggMenu = 0 
 
 ;---------------------------------------------------------------
 ;--------------- options gfx -----------------------------------
 ;--------------------------------------------------------------- 
+
+!removeGFXreuse = 0					; this option is ment to be used along the editor and removes the second GFX load. So you can put graphics there! 
 
 !GFX_insert = 1
 !simonIdle = 0
@@ -45,31 +49,26 @@
 
 !moonWalking = 0 
 
+;---------------------------------------------------------------
+;--------------- NEW RAM LABELS --------------------------------
+;--------------------------------------------------------------- 
+!skipeHitFlag = $530
+
+
 { ; ----------- asm patches ------------------------------------
+!vanillaROM_FreeSpace = 1 			; for small patches of Vanilla ROM. DO NOT SET UNTIL U NEED 2!
 
-incsrc code/labels.asm					; ----------------------
-
-org $80810D
-;LDA.W #$0040                         	;subw default 2X
-
-; freeSpace at  $81B7BC-81b902 
-; freeSpace at	$A49000-A4FFFF ??
-; freeSpace at 	$ff8a00		
-;				$80C5BF-80C647
-
-;110000 collusion tables ROM offset
-;org $20c000 LvlTransitionTable
+incsrc code/labels.asm				; ----------------------
 
 
-;entrances a78000 ROM 138000
-
-;SPRITEASSEMBLY l2590 tutorialHackTweak
-;GFX some are in pointer and need to be plit for some reason??
-
-org $a08000							; free Space startpoint !!org $a0f000 freeSpace PrePatch
+if !vanillaROM_FreeSpace == 1 		; assigne free space manually since donno behavior of free space directive.. 	
+org $9FF3C4							; same as practice ROM uses 
+else 
+org $a08000							
+endif 
 pushPC
 
-incsrc code/baseRomTweaks.asm		
+	incsrc code/baseRomTweaks.asm		
 ;incsrc code/jobs.asm 				; will be applied to the ROM beforehand  
 ;incsrc code/textEngine.asm 
 ;incsrc code/tutorialHackTweak.asm	; moved for space 
@@ -91,8 +90,8 @@ warnPC $a4ffff
 ;incsrc code/enemiePointer.asm		; will be applied to the ROM beforehand  
 ;incsrc code/text.asm
 
-if !practice == 1
-incsrc code/practice.asm 
+if !debuggMenu == 1
+incsrc code/debugMenu.asm
 endif
 
 ;incsrc code/NewEnemies/oldManEvID0d.asm 

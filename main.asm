@@ -2,7 +2,7 @@
 ;--------------- options gamePlay ------------------------------
 ;--------------------------------------------------------------- 
 
-!deathCounter = 1
+!deathCounter = 0
 !removeTimer = 0
 
 !removeGFXreuse = 0

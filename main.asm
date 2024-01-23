@@ -56,7 +56,7 @@
 
 
 { ; ----------- asm patches ------------------------------------
-!vanillaROM_FreeSpace = 1 			; for small patches of Vanilla ROM. DO NOT SET UNTIL U NEED 2!
+!vanillaROM_FreeSpace = 0 			; for small patches of Vanilla ROM. DO NOT SET UNTIL U NEED 2!
 
 incsrc code/labels.asm				; ----------------------
 

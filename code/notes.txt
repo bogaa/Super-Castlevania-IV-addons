@@ -1,4 +1,4 @@
-todo:
+todo: write a proper guide how to use it and make patches
 
 
 

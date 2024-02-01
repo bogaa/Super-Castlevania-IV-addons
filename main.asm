@@ -4,11 +4,11 @@
 
 !deathCounter = 0
 !removeTimer = 0
-!levelSelect = 0
+!levelSelect = 1
 
 !hotFixWhipCancle = 0				; always check ring with whip 
-!NoFatalCrusherHit = 0				; set to do 5 damage in the code 
-!NoFatalSpikeHit = 0
+!NoFatalCrusherHit = 1				; set to do 5 damage in the code 
+!NoFatalSpikeHit = 1
 
 !BatRing = 0						; code in baseRomTweaks
 

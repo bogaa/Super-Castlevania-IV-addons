@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE settings SYSTEM "settings.dtd">
+<settings>
+  <property key="locale" value="en_US"/>
+  <property key="viewStatusBar" value="true"/>
+  <property key="viewToolBar" value="true"/>
+  <property key="maxRecentFiles" value="10"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite\spriteGFX_9_suckholeStone_01.fig"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite\spriteGFX_9_suckholeStone_00.fig"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite\spritePAL_0_main.col"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite\spritePAL_0.col"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\tiles\BG_colors4Levels.col"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\tiles\lvlPAL_Anim_1_Castle01.col"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite\bosses\dancerGFXdataPart1.fig"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\sc4.sfc"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\misc\slograExitGFXdata.fig"/>
+  <property key="recentFile" value="D:\GitHub\SNES\SC4_Addons\GFX\misc\konamiScreen.fig"/>
+  <property key="lastPath" value="D:\GitHub\SNES\SC4_Addons\GFX\sprite"/>
+  <property key="MenuBG" value="#f0f0f0"/>
+  <property key="WindowBG" value="#d2d2d2"/>
+  <property key="AsideBG" value="#f0f0f0"/>
+  <property key="FrameBG" value="#b5b5b5"/>
+  <property key="DarkIcons" value="true"/>
+</settings>
